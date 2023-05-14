@@ -1,0 +1,14 @@
+.containerTitlelistPost {
+    align-items: center;
+    width: 600px;
+}
+
+.titleListPost {
+    align-self: center;
+}
+
+.containerPosts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

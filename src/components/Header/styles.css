@@ -1,0 +1,17 @@
+.header {
+    background-color: #D5E7F7;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 18px 10px 18px;
+  }
+  
+  .title {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 24px;
+  }
+
+  .containetButton {
+    display: flex;
+    gap: 18px;
+  }

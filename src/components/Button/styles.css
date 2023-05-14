@@ -1,0 +1,29 @@
+.buttonHeader {
+    padding: 8px 15px 8px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #2C88D9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.buttonHeader:hover {
+    background-color: #1b6aaf;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.buttonCreatePost {
+    padding: 8px 15px 8px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    border: solid 1px #2C88D9;
+    border-radius: 3px;
+    color: #2C88D9;
+}
+
+.buttonCreatePost:hover {
+    background-color: #e8f2fc;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}

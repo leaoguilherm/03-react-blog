@@ -11,7 +11,7 @@ export async function postApi(newPost) {
 
     }
 
-    const response = await fetch(url, options)
+    await fetch(url, options)
 }
 
 export async function getApi() {

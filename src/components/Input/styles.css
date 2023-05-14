@@ -15,3 +15,9 @@ label {
     color: rgb(87, 87, 95);
     margin-top: 9px;
 }
+
+@media screen and (max-width: 542px) {
+    input {
+        width: auto;
+    }
+}

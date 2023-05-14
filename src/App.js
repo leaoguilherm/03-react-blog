@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <div className='main'>
-        {/* <CreatePost /> */}
+        <CreatePost />
         <HomePage/>
       </div>
 

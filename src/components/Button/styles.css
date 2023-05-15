@@ -6,6 +6,7 @@
     border: none;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 
 .buttonHeader:hover {
@@ -21,6 +22,7 @@
     border: solid 1px #2C88D9;
     border-radius: 3px;
     color: #2C88D9;
+    cursor: pointer;
 }
 
 .buttonCreatePost:hover {

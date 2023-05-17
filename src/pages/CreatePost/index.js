@@ -2,7 +2,7 @@ import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
 import "./styles.css"
 import { useState } from "react"
-import { postApi } from "../../api/index"
+import { postApi } from "../../api/blogApi"
 
 
 

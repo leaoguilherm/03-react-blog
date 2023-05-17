@@ -29,3 +29,14 @@
     background-color: #e8f2fc;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
+
+.deleteCard {
+    padding: 2px 2px 2px 2px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: white;
+    border: solid 1px #913131;
+    border-radius: 3px;
+    color: #913131;
+    cursor: pointer;
+}

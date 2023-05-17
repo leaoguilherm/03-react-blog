@@ -1,6 +1,6 @@
 import "./styles.css";
 import  {FormatDate} from "../../components/FormatDate"
-import { Button } from "../Button";
+// import { Button } from "../Button";
 
 export const CardPost = ({ listPosts }) => {
     return (

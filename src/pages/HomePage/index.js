@@ -1,7 +1,7 @@
-import "./styles.css"
 import { useEffect, useState } from "react"
 import { CardPost } from "../../components/CardPost"
 import { getApi } from "../../api/blogApi"
+import { ContainerPosts, ContainerTitle, TitleListPost } from "./styles"
 
 export const HomePage = () => {
     const [listPosts, setListsPosts] = useState()
@@ -18,12 +18,12 @@ export const HomePage = () => {
     }, [])
     return (
         <>
-            <div className="containerTitlelistPost">
-                <h3 className="titleListPost">Listagem de posts</h3>
-            </div>
-            <div className="containerPosts">
+            <ContainerTitle className="containerTitlelistPost">
+                <TitleListPost className="titleListPost">Listagem de posts</TitleListPost>
+            </ContainerTitle>
+            <ContainerPosts className="containerPosts">
                 <CardPost listPosts={listPosts} />
-            </div >
+            </ContainerPosts >
         </>
     )
 

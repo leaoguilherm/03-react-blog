@@ -1,8 +1,8 @@
 import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
-import "./styles.css"
 import { useState } from "react"
 import { postApi } from "../../api/blogApi"
+import { ContainerBtnCreatePost, ContainerInput, SuccessMessage, TitleCreatePost } from "./styles"
 
 
 
@@ -48,9 +48,9 @@ export const CreatePost = () => {
 
     return (
         <div className="containerCreatePost">
-            <h3 className="titleCreatePost">Cadastro de posts</h3>
+            <TitleCreatePost className="titleCreatePost">Cadastro de posts</TitleCreatePost>
             <form onSubmit={formInput}>
-                <div className="containerInput">
+                <ContainerInput className="containerInput">
                     <Input
                         htmlFor="title"
                         label="Título"
@@ -80,11 +80,11 @@ export const CreatePost = () => {
                         onChange={changeAuthor}
                         value={valueAuthor}
                         required />
-                </div>
-                <div className="successMessage" style={{ display: elementStyle }}>Publicação realizada com sucesso.</div>
-                <div className="container-buttonCreatePost">
+                </ContainerInput>
+                <SuccessMessage className="successMessage" style={{ display: elementStyle }}>Publicação realizada com sucesso.</SuccessMessage>
+                <ContainerBtnCreatePost className="container-buttonCreatePost">
                     <Button className="buttonCreatePost" onClick={clickCreatePost} typ="submit">Cadastrar post</Button>
-                </div>
+                </ContainerBtnCreatePost>
             </form>
         </div>
     )

@@ -1,5 +1,5 @@
-import "./styles.css";
 import  {FormatDate} from "../../components/FormatDate"
+import { Card, FooterCard, TitleCard } from "./styles"
 // import { Button } from "../Button";
 
 export const CardPost = ({ listPosts }) => {
@@ -7,15 +7,15 @@ export const CardPost = ({ listPosts }) => {
         <>
             {listPosts?.map((listPosts) => {
                 return (
-                    <div className="card" key={listPosts.id}>
-                        <h4 className="titleCard">{listPosts.title}</h4>
+                    <Card className="card" key={listPosts.id}>
+                        <TitleCard className="titleCard">{listPosts.title}</TitleCard>
                         <p>{listPosts.description}</p>
-                        <footer className="footerCard">
+                        <FooterCard className="footerCard">
                             <div>Por: {listPosts.author}</div>
                             <div>em {FormatDate(listPosts.createdAt)}</div>
                             {/* <Button className='deleteCard'>Excluir</Button> */}
-                        </footer>
-                    </div>
+                        </FooterCard>
+                    </Card>
                 )
             })}
         </>

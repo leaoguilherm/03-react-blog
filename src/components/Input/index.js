@@ -1,10 +1,11 @@
-import "./styles.css"
+import { InputCreatePost, LabelCreatePost } from "./styles"
+
 
 export const Input = ({htmlFor,label, ...props}) => {
     return (
         <>
-            <label htmlFor={htmlFor}>{label}</label>
-            <input {...props}></input>
+            <LabelCreatePost htmlFor={htmlFor}>{label}</LabelCreatePost>
+            <InputCreatePost {...props}></InputCreatePost>
         </>
     )
 }

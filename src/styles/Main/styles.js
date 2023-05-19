@@ -8,4 +8,3 @@ export const Main = styled.main`
     justify-content: flex-start;
     padding-top: 25px;
 `
-

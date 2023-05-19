@@ -1,8 +1,7 @@
-export const FormatDate = (dateString) => {
-    const date = new Date(dateString);
-    const day = date.getDate();
-    const month = date.getMonth() + 1;
-    const year = date.getFullYear();
+import { format } from "date-fns"
 
-    return `${day}/${month}/${year}`;
+export const FormatDate = (dateString) => {
+    const formatDate = format(new Date(dateString), 'dd/MM/yyyy - HH:mm',)
+
+    return formatDate
 }

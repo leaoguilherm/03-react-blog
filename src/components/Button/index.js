@@ -1,11 +1,11 @@
 // import "./styles.css"
 
-import { ButtonHeader } from "./styles"
+import { StyledButton } from "./styles"
 
 
 
 export const Button = ({children, ...props}) => {
     return (
-            <ButtonHeader {...props}>{children}</ButtonHeader>
+            <StyledButton {...props}>{children}</StyledButton>
     )
 }

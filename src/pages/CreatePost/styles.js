@@ -12,6 +12,7 @@ export const ContainerInput = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0px 13px 10px 13px;
+    background-color: white;
 `
 
 export const ContainerBtnCreatePost = styled.div`

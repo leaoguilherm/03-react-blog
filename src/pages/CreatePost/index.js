@@ -54,7 +54,6 @@ export const CreatePost = () => {
                     <Input
                         htmlFor="title"
                         label="Título"
-                        className="inputTitle"
                         name="title"
                         placeholder="Escreva o título do post"
                         onChange={changeTitle}
@@ -64,7 +63,6 @@ export const CreatePost = () => {
                     <Input
                         htmlFor="description"
                         label="Descrição"
-                        className="inputDescription"
                         name="description"
                         placeholder="Escreva a descrição do post"
                         onChange={changeDescription}
@@ -74,16 +72,15 @@ export const CreatePost = () => {
                     <Input
                         htmlFor="author"
                         label="Autor"
-                        className="inputAuthor"
                         name="author"
                         placeholder="Escreva o autor do post"
                         onChange={changeAuthor}
                         value={valueAuthor}
                         required />
                 </ContainerInput>
-                <SuccessMessage className="successMessage" style={{ display: elementStyle }}>Publicação realizada com sucesso.</SuccessMessage>
-                <ContainerBtnCreatePost className="container-buttonCreatePost">
-                    <Button className="buttonCreatePost" onClick={clickCreatePost} typ="submit">Cadastrar post</Button>
+                <SuccessMessage style={{ display: elementStyle }}>Publicação realizada com sucesso.</SuccessMessage>
+                <ContainerBtnCreatePost>
+                    <Button secondary onClick={clickCreatePost} typ="submit">Cadastrar post</Button>
                 </ContainerBtnCreatePost>
             </form>
         </div>

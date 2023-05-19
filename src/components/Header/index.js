@@ -9,10 +9,10 @@ export const Header = () => {
             <Title className="title">React Blog</Title>
             <ContainerButton className="containerButton">
                 <Link to='/'>
-                    <Button className="buttonHeader">Home</Button>
+                    <Button >Home</Button>
                 </Link>
                 <Link to='/posts/create'>
-                    <Button className="buttonHeader">Criar post</Button>
+                    <Button >Criar post</Button>
                 </Link>
             </ContainerButton>
         </HeaderMain>

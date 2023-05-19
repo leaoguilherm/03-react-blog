@@ -18,10 +18,10 @@ export const HomePage = () => {
     }, [])
     return (
         <>
-            <ContainerTitle className="containerTitlelistPost">
-                <TitleListPost className="titleListPost">Listagem de posts</TitleListPost>
+            <ContainerTitle>
+                <TitleListPost>Listagem de posts</TitleListPost>
             </ContainerTitle>
-            <ContainerPosts className="containerPosts">
+            <ContainerPosts>
                 <CardPost listPosts={listPosts} />
             </ContainerPosts >
         </>
